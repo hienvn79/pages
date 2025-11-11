@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key')
 DEBUG = False
 
 ALLOWED_HOSTS = ['pages-ir84.onrender.com']
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition
 
